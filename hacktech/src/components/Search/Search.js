@@ -1,16 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Search.css";
 
-function Search() {
+function Search(props) {
+  const [search, setSearch] = useState("");
+  
+  const handleSubmit = (evt) => {
+      evt.preventDefault();
+      // ALERTING ON EACH SEARCH FOR TESTING
+      alert(`Submitting Search ${search}`)
+  }
   return (
     <div className="search-body">
       <div className="row">
         <div className="col-md-1"></div>
         <div className="col-md-10">
           <div className="row">
-            <div className="col-md-12">
-              <h3 className="search-title left">Search</h3>
-            </div>
+            <form onSubmit={handleSubmit} className="search-body">
+              <label className="search-title left">
+                Search:
+                <input
+                  type="text"
+                  value={search}
+                  onChange={e => setSearch(e.target.value)}
+                />
+              </label>
+                <input type="submit" value="Submit" />
+            </form>
+              <div className="col-md-12">
+                <h3 className="search-title left">Search</h3>
+              </div>
           </div>
           <div className="row">
             <div className="col-md-12">
