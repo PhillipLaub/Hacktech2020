@@ -1,8 +1,8 @@
-import React, { useState, useEffect }from 'react';
-import {Link} from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./Results.css";
 
 function Results() {
-
   useEffect(() => {
     fetchItems();
   }, []);
@@ -21,28 +21,52 @@ function Results() {
     url += "&paginationInput.entriesPerPage=10";
 
     const data = await fetch(url, {
-      "method": "GET"
-    })
-    
+      method: "GET"
+    });
+
     const items = await data.json();
     const result = items.findItemsAdvancedResponse[0].searchResult[0].item;
-    console.log(result[0].title)
+    console.log(result);
     setItems(result);
   };
 
-
   return (
     <div>
-      <p>Results</p>
+      <div className="row">
+        <div className="col-md-4"></div>
+        <div className="col-md-4">
+          <h4>Results</h4>
+        </div>
+        <div className="col-md-4"></div>
+      </div>
 
-      {items.map(item => (
-          <h4 key={item.id}>
-            <Link to={`/songs/${item.id}`}>{item.title}</Link></h4>
-      ))}
+      <div className="row">
+        {items.map(item => (
+          <div className="col-md-3">
+            <div className="item-card">
+              <div key={item.id}>
+                <h4 className="item-title">
+                  <a href={item.viewItemURL[0]}>{item.title}</a>
+                </h4>
+                <div className="img-container">
+ <a href={item.viewItemURL[0]}>
+                  <img key={item.id} src={item.galleryURL[0]} />
+                </a>
+
+                </div>
+               
+
+                <h6>
+                  Price: ${item.sellingStatus[0].currentPrice[0].__value__}
+                </h6>
+                {/* <h6>Shipping Cost: ${item.shippingInfo[0].shippingServiceCost[0].__value__}0</h6> */}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
 export default Results;
-
-
