@@ -1,0 +1,39 @@
+.nav-body {
+    background:#f4f4f4;
+    /* height:15vh; */
+    background:yellow;
+    color:black;
+    font-weight: bolder;
+
+    -webkit-box-shadow: inset 0px -15px 15px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px -15px 15px -10px rgba(0,0,0,0.75);
+box-shadow: inset 0px -15px 15px -10px rgba(0,0,0,0.75);
+
+padding:1%;
+
+border-bottom:2px solid black;
+}
+
+.logo {
+    color:black;
+}
+
+  
+.nav-links {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-align: right;
+    padding-left:0;
+    color:black;
+    
+  }
+
+  
+  .link {
+    text-decoration: none;
+    color:black;
+    text-align:center;
+    padding:2%;
+  }

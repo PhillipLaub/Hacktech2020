@@ -1,0 +1,10 @@
+.search-body {
+    background:#f4f4f4;
+    border-right:1px solid black;
+    
+    height:70vh;
+}
+
+.search-title {
+    margin-top:2%;
+}

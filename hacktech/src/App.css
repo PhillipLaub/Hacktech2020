@@ -1,0 +1,22 @@
+html, body {
+    height:100%;
+    overflow-x: hidden;
+}
+
+* {
+    /* border:1px solid red; */
+    text-align:center;
+    font-family: 'Anton', sans-serif;
+}
+
+
+/* Smaller than tablet view */
+@media screen and (max-width: 767px) {
+    .App {
+      text-align: center;
+    }
+
+    .search-body {
+        height:inherit !important;
+    }
+}  
