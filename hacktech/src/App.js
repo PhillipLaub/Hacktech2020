@@ -11,6 +11,8 @@ import Landing from "./components/Landing/Landing";
 
 //Links/Routes
 import About from "./components/About/About";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
         </Switch>
         <Footer />
       </div>

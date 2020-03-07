@@ -1,39 +1,37 @@
 .nav-body {
-    background:#f4f4f4;
-    /* height:15vh; */
-    background:yellow;
-    color:black;
-    font-weight: bolder;
+  background: #f4f4f4;
+  /* height:15vh; */
+  background: black;
+  color: yellow;
 
-    -webkit-box-shadow: inset 0px -15px 15px -10px rgba(0,0,0,0.75);
--moz-box-shadow: inset 0px -15px 15px -10px rgba(0,0,0,0.75);
-box-shadow: inset 0px -15px 15px -10px rgba(0,0,0,0.75);
+  -webkit-box-shadow: inset 0px -15px 15px -10px rgba(248,248,0,1);
+  -moz-box-shadow: inset 0px -15px 15px -10px rgba(248,248,0,1);
+  box-shadow: inset 0px -15px 15px -10px rgba(248,248,0,1);
 
-padding:1%;
+  padding: 1%;
 
-border-bottom:2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .logo {
-    color:black;
+  color: yellow;
+  
 }
 
-  
 .nav-links {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    text-align: right;
-    padding-left:0;
-    color:black;
-    
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-align: right;
+  padding-left: 0;
+  color: yellow;;
+  margin-bottom: 0px;
+}
 
-  
-  .link {
-    text-decoration: none;
-    color:black;
-    text-align:center;
-    padding:2%;
-  }
+.link {
+  text-decoration: none;
+  color: yellow;
+  text-align: center;
+  padding: 2%;
+}
