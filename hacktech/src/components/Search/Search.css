@@ -1,10 +1,16 @@
 .search-body {
-    background:#f4f4f4;
-    border-right:1px solid black;
-    
-    height:70vh;
+    background:#3c3a05;
+    border-right:5px solid #9c9723;
+    color:white;
+    height:90vh;
 }
 
 .search-title {
     margin-top:2%;
+}
+
+.btn-outline-secondary {
+    color: white;
+    border-color: white;
+    background: black;
 }

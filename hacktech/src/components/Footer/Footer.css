@@ -1,7 +1,14 @@
 .footer-body {
-    background: #f4f4f4;
-    text-align: center;
-    height: 10vh;
-    background:yellow;
-    border-top:1px solid black;
+  text-align: center;
+  color:yellow;
+  background: black;
+  border-top: 1px solid black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  -webkit-box-shadow: inset 0px 15px 15px -10px rgba(248,248,0,1);
+  -moz-box-shadow: inset 0px 15px 15px -10px rgba(248,248,0,1);
+  box-shadow: inset 0px 15px 15px -10px rgba(248,248,0,1);
 }

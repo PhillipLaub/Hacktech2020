@@ -1,24 +1,46 @@
 html, body {
     height:100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 * {
     /* border:1px solid red; */
     text-align:center;
   
-font-family: 'Rock Salt', cursive;
+    font-family: 'Raleway', sans-serif;
 
 }
+
+
+a {
+    text-decoration: none !important;
+}
+
+.left {
+    text-align:left;
+}
+
+.pad3 {
+    padding:3%;
+}
+
 
 
 /* Smaller than tablet view */
 @media screen and (max-width: 767px) {
     .App {
       text-align: center;
+     
+    }
+    .logo {
+        padding: 2%;
+        font-size: x-large;
+        margin-bottom: 5%;
     }
 
     .search-body {
-        height:inherit !important;
+        max-height: 25vh;
     }
+    
 }  

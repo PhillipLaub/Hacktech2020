@@ -1,6 +1,6 @@
 .nav-body {
   background: #f4f4f4;
-  /* height:15vh; */
+  
   background: black;
   color: yellow;
 
@@ -15,7 +15,7 @@
 
 .logo {
   color: yellow;
-  
+  font-family: 'Rock Salt', cursive;
 }
 
 .nav-links {

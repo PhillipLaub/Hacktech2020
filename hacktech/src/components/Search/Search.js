@@ -9,7 +9,7 @@ function Search() {
         <div className="col-md-10">
           <div className="row">
             <div className="col-md-12">
-              <h3 className="search-title">Search Section</h3>
+              <h3 className="search-title left">Search</h3>
             </div>
           </div>
           <div className="row">
@@ -28,29 +28,35 @@ function Search() {
                     type="button"
                     id="button-addon2"
                   >
-                    Search
+                    Submit
                   </button>
                 </div>
               </div>
             </div>
           </div>
 
-<div className="row">
-    <div className="col-md-12"><h4>Filters</h4></div>
-</div>
+          <div className="row">
+            <div className="col-md-12">
+              <h4 className="left">Filters</h4>
+            </div>
+          </div>
 
-<div className="row">
-    <div className="col-md-12">
-    <div className="checkbox">
-  <label><input type="checkbox" value=""/>Option 1</label>
-</div>
-<div className="checkbox">
-  <label><input type="checkbox" value=""/>Option 2</label>
-</div>
-
-    </div>
-</div>
-
+          <div className="row">
+            <div className="col-md-12">
+              <div className="checkbox left">
+                <label>
+                  <input type="checkbox" value=""/>
+                  Option 1
+                </label>
+              </div>
+              <div className="checkbox left">
+                <label>
+                  <input type="checkbox" value="" />
+                  Option 2
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="col-md-1"></div>
