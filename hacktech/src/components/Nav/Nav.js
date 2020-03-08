@@ -20,9 +20,6 @@ function Nav() {
                 <Link to="/register">
                   <li id="registerButton" className="link">REGISTER</li>
                 </Link> 
-                <Link to="/about">
-                  <li className="link">ABOUT</li>
-                </Link> 
                 
               </ul>
           </div>

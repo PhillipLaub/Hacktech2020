@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./Results.css";
 
 function Results() {
   useEffect(() => {
     fetchItems();
   }, []);
+
+  
 
   const [items, setItems] = useState([]);
 
@@ -18,7 +19,7 @@ function Results() {
     url += "&REST-PAYLOAD";
     url += "&GLOBAL-ID=EBAY-US";
     url += "&keywords=doom";
-    url += "&paginationInput.entriesPerPage=10";
+    url += "&paginationInput.entriesPerPage=12";
 
     const data = await fetch(url, {
       method: "GET"
@@ -29,6 +30,8 @@ function Results() {
     console.log(result);
     setItems(result);
   };
+
+  
 
   return (
     <div>
@@ -42,23 +45,30 @@ function Results() {
 
       <div className="row">
         {items.map(item => (
-          <div className="col-md-3">
-            <div className="item-card">
+          <div className="col-md-3 margin-b2">
+            <div className="item-card hvr-grow">
               <div key={item.id}>
-                <h4 className="item-title">
+                  <div className="title-box"><h4 className="item-title">
                   <a href={item.viewItemURL[0]}>{item.title}</a>
-                </h4>
-                <div className="img-container">
- <a href={item.viewItemURL[0]}>
-                  <img key={item.id} src={item.galleryURL[0]} />
+                </h4></div>
+                
+                
+                <div className="row img-price">
+                    <div className="col-md-6  align-self-center">
+                         <div className="img-container">
+                    <a href={item.viewItemURL[0]}>
+                  <img key={item.id} src={item.galleryURL[0]} alt={item.id}/>
                 </a>
 
+                </div></div>
+                    <div className="col-md-6  align-self-center"><h5>
+                  Price: ${item.sellingStatus[0].currentPrice[0].__value__}
+                </h5></div>
                 </div>
                
+               
 
-                <h6>
-                  Price: ${item.sellingStatus[0].currentPrice[0].__value__}
-                </h6>
+                
                 {/* <h6>Shipping Cost: ${item.shippingInfo[0].shippingServiceCost[0].__value__}0</h6> */}
               </div>
             </div>

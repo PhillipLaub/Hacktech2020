@@ -17,12 +17,29 @@ a {
     text-decoration: none !important;
 }
 
+a:hover {
+    color:yellow;
+}
+
+img {
+    width: 96%;
+    margin: 0% 0% 3% 5%;
+    height:10vh;
+    border:2px solid #9c9723;
+    
+}
+
 .left {
     text-align:left;
 }
 
 .pad3 {
     padding:3%;
+}
+
+
+.margin-b2 {
+    margin-bottom:2%;
 }
 
 
