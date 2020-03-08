@@ -35,3 +35,10 @@
   text-align: center;
   padding: 2%;
 }
+
+a {
+  text-decoration: none;
+  color: yellow;
+  text-align: center;
+  padding: 2%;
+}
