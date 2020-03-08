@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Landing.css";
 import Results from '../Results/Results'
 
@@ -7,6 +7,10 @@ import Results from '../Results/Results'
 function Landing() {
 
 const [search, setSearch] = useState("");
+
+useEffect(() => {
+ setSearch(search)
+}, [search]);
   
   const handleSubmit = (evt) => {
       evt.preventDefault();
@@ -76,7 +80,7 @@ const [search, setSearch] = useState("");
                   <div className="row">
                     <div className="col-md-1"></div>
                     <div className="col-md-10">
-                        <Results />
+                        <Results search={search}/>
                     </div>
                     <div className="col-md-1"></div>
                   </div>

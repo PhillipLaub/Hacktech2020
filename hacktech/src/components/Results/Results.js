@@ -5,10 +5,10 @@ import "./Results.css";
 
 
 
-function Results() {
+function Results(props) {
   useEffect(() => {
     fetchItems();
-  }, []);
+  }, [props.search]);
 
   
 
@@ -22,7 +22,13 @@ function Results() {
     url += "&RESPONSE-DATA-FORMAT=JSON";
     url += "&REST-PAYLOAD";
     url += "&GLOBAL-ID=EBAY-US";
-    url += "&keywords=doom";
+    url += "&keywords=";
+    if (props.search === "") {
+      url += "doom"
+    }
+    else {url += props.search}
+ 
+    url += props.search;
     url += "&paginationInput.entriesPerPage=12";
 
     const data = await fetch(url, {
