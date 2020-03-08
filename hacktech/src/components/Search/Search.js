@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Search.css";
 
 function Search(props) {
   const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    setSearch(search)
+  }, [search]);
   
   const handleSubmit = (evt) => {
       evt.preventDefault();

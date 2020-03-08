@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Landing.css";
 import Search from "../Search/Search";
 import Results from '../Results/Results'
@@ -6,6 +6,10 @@ import Results from '../Results/Results'
 
 
 function Landing() {
+
+const [search, setSearch] = useState(null);
+
+
   return (
       <div className="landing-body">
           <div className="row">

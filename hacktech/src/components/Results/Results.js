@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Results.css";
+import Search from "../Search/Search"
 
 function Results() {
+  const [items, setItems] = useState([]);
+  const [search, setSearch] = useState(search);
+  
   useEffect(() => {
     fetchItems();
-  }, []);
+    setSearch(search)
+  }, [search]);
 
-  const [items, setItems] = useState([]);
+
 
   const fetchItems = async () => {
     var url = "http://svcs.ebay.com/services/search/FindingService/v1";
