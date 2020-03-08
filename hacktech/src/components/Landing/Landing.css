@@ -6,3 +6,19 @@
 .welcome {
     margin-top :2%;
 }
+
+.search-body {
+    background:#3c3a05;
+    color:white;
+    height:120%;
+}
+
+.search-title {
+    margin-top:2%;
+}
+
+.btn-outline-secondary {
+    color: white;
+    border-color: white;
+    background: black;
+}
