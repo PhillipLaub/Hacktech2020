@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Results.css";
+// import '../Search/Search';
+// import Search from "../Search/Search";
+
+
 
 function Results() {
   useEffect(() => {
