@@ -14,13 +14,8 @@ function Nav() {
                 <Link to="/">
                   <li className="link">HOME</li>
                 </Link>
-                <Link to="/login">
-                  <li id="loginButton" className="link">LOGIN</li>
-                </Link> 
-                <Link to="/register">
-                  <li id="registerButton" className="link">REGISTER</li>
-                </Link> 
-                
+                  <li id="loginButton" className="link"><a href="/login">LOGIN</a></li>
+                  <li id="registerButton" className="link"><a href="/register">REGISTER</a></li>           
               </ul>
           </div>
         </div>
