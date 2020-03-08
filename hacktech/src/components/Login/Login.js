@@ -24,7 +24,7 @@ function Login() {
                   id="email"
                   name="email"
                   aria-describedby="emailHelp"
-                  placeholder="Enter email"
+                  placeholder="Enter your email"
                 />
               </div>
               <div className="form-group">
@@ -34,7 +34,7 @@ function Login() {
                   className="form-control"
                   id="password"
                   name="password"
-                  placeholder="Password"
+                  placeholder="Enter your password"
                 />
               </div>
 
